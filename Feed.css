@@ -1,0 +1,181 @@
+/* Feed Container */
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 800px; /* Set a maximum width for the feed */
+    margin: 0 auto; /* Center the feed horizontally */
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+    align-items: center; /* Center align items horizontally */
+}
+
+/* Feed Title */
+.feed-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #1c1d1f;
+    background: linear-gradient(135deg, #0099ff, #ffffff);
+    padding: 15px 0;
+    margin: 0 0 20px 0; /* Remove top margin and add bottom margin */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Edit Profile Link Styling */
+.edit-profile-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #595f58, #163b8d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.edit-profile-link:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.edit-profile-link:active {
+    background: linear-gradient(135deg, #003d7a, #0056b3);
+    transform: translateY(1px);
+}
+
+/* Tweet Form Container */
+.tweet-form-container {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tweet Form Styling */
+.tweet-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+}
+
+.file-input {
+    margin-bottom: 10px;
+}
+
+.tweet-form button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tweet-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tweets Container */
+.tweets-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Individual Tweet Post */
+.post {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Ensure the tweet text doesn't overflow */
+.post p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Image Styling */
+.tweet-image {
+    max-width: 100%;
+    max-height: 100px; /* Set a maximum height for the image */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+/* Like and Delete Buttons */
+.like-button, .delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.like-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.like-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
